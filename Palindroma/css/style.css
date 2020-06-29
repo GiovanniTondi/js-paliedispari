@@ -32,7 +32,7 @@ body {
     border-radius: 15px;
     line-height: 1.5;
     overflow: hidden;
-    transition: max-height .3s ease-in-out 1s;
+    transition: max-height 1s;
     max-height: 250px;
 }
 
@@ -41,10 +41,11 @@ h2 {
 }
 
 .form {
-    width: 80%;
+    width: 90%;
 }
 
 #parola {
+    margin-bottom: 10px;
     text-align: center;
     height: 40px;
     border: 0;
@@ -54,9 +55,10 @@ h2 {
 }
 
 #messaggio {
-    width: 80%;
+    margin: 10px 0;
+    width: 90%;
     padding: 25px;
-    border-radius: 15px;
+    border-radius: 10px;
     color: #fff;
 }
 
@@ -64,14 +66,20 @@ h2 {
     background-color: #316f36;
 }
 
+.notSuccess {
+    background-color: #3a3ae3;
+}
+
 .error {
+    animation: errore 0.3s;
+    animation-delay: .3s;
     background-color: #e82e2e;
 }
 
 .btn {
-    margin: 20px 0;
+    margin: 10px 0;
     padding: 10px;
-    width: 80%;
+    width: 90%;
     font-size: 18px;
 }
 
@@ -90,4 +98,13 @@ h2 {
 
 .transition {
     max-height: 1000px;
+}
+
+
+/* Animazioni */
+@keyframes errore {
+    0% {margin-right: 0; margin-left: 0}
+    25% {margin-right: 15px}
+    50% {margin-right: 0; margin-left: 15px}
+    100% {margin-left: 0}
 }
