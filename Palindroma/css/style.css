@@ -1,0 +1,93 @@
+/* Regole generali */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+/* Contenuto */
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #254441;
+    color: #111;
+}
+
+.jumbo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 2%;
+    background-color: #B4D0BA;
+    text-align: center;
+    border-radius: 15px;
+    line-height: 1.5;
+    overflow: hidden;
+    transition: max-height .3s ease-in-out 1s;
+    max-height: 250px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.form {
+    width: 80%;
+}
+
+#parola {
+    text-align: center;
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 22px;
+}
+
+#messaggio {
+    width: 80%;
+    padding: 25px;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.successo {
+    background-color: #316f36;
+}
+
+.error {
+    background-color: #e82e2e;
+}
+
+.btn {
+    margin: 20px 0;
+    padding: 10px;
+    width: 80%;
+    font-size: 18px;
+}
+
+
+/* Classi di appoggio */
+.hidden {
+    display: none;
+    transition: all 1s;
+    opacity: 0;
+}
+
+.show {
+    display: block;
+    opacity: 1;
+}
+
+.transition {
+    max-height: 1000px;
+}
